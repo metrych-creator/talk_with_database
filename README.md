@@ -4,7 +4,8 @@
 
 The goal of this project was to implement a conversational AI application with two core functionalities: generating realistic synthetic data based on SQL schemas and enabling natural language querying (Talk-to-your-data) against that data.
 
-The project is structured around two main functional areas: **Data Generation** and **Chat with Your Data**.
+![App Demo](demo.gif)
+
 
 ## Functionalities
 

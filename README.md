@@ -29,9 +29,18 @@ The data generation component interprets SQL schemas (DDL) and produces a config
   * **JOINs**
   * **Aggregation functions**
 
-### Data Visualization
+### System Workflow
+* **User Input:** The user submits a specific task or request.
 
-* **Seaborn Visualizations:** Generate charts and visual analyses directly in the interface.
+* **Task Classification:** The system identifies the task as either a SQL Query or a Data Plot.
+
+* **Specialized Routing:** The request is sent to a specialized model (by function calling) to generate the necessary Python (Seaborn) or SQL code.
+
+* **Execution:** The application attempts to run the generated code.
+
+* **Validation:** If the code runs successfully, the system displays the result and the code to the user.
+
+* **Error Handling:** If the code fails, the system triggers a retry to regenerate and fix the output.
 
 
 ### Observability
